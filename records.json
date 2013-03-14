@@ -1,0 +1,321 @@
+{
+  "FileHeader": [
+    {
+      "name": "type",
+      "size": 1,
+      "format": "/1/",
+      "default": "1"
+    },
+    {
+      "name": "priorityCode",
+      "size": 2,
+      "format": "/\\d\\d/",
+      "default": "01"
+    },
+    {
+      "name": "_space_",
+      "size": 1,
+      "format": "/ /",
+      "default": " "
+    },
+    {
+      "name": "immediateDestination",
+      "size": 9,
+      "format": "/\\d{9}/"
+    },
+    {
+      "name": "immediateOrigin",
+      "size": 10,
+      "format": "/\\d{10}/"
+    },
+    {
+      "name": "fileCreationDate",
+      "size": 6,
+      "format": "/\\d{6}/"
+    },
+    {
+      "name": "fileCreationTime",
+      "size": 4,
+      "format": "/\\d{4}/",
+      "default": ""
+    },
+    {
+      "name": "fileId",
+      "size": 1,
+      "format": "/[A-Z0-9]/",
+      "default": ""
+    },
+    {
+      "name": "recordSize",
+      "size": 3,
+      "format": "/\\d{3}/",
+      "default": "094"
+    },
+    {
+      "name": "blockingFactor",
+      "size": 2,
+      "format": "/\\d{2}/",
+      "default": "10"
+    },
+    {
+      "name": "formatCode",
+      "size": 1,
+      "format": "/1/",
+      "default": "1"
+    },
+    {
+      "name": "immediateDestinationName",
+      "size": 23,
+      "format": "Alpha",
+      "default": ""
+    },
+    {
+      "name": "immediateOriginName",
+      "size": 23,
+      "format": "Alpha",
+      "default": ""
+    },
+    {
+      "name": "referenceCode",
+      "size": 8,
+      "format": "Alpha",
+      "default": ""
+    }
+  ],
+  "BatchHeader": [
+    {
+      "name": "type",
+      "size": 1,
+      "format": "/5/",
+      "default": "5"
+    },
+    {
+      "name": "serviceClassCode",
+      "size": 3,
+      "format": "Numeric"
+    },
+    {
+      "name": "companyName",
+      "size": 16,
+      "format": "Alpha"
+    },
+    {
+      "name": "companyDiscretionaryData",
+      "size": 20,
+      "format": "Alpha",
+      "default": ""
+    },
+    {
+      "name": "companyIdentification",
+      "size": 10,
+      "format": "Numeric"
+    },
+    {
+      "name": "standardEntryClassCode",
+      "size": 3,
+      "format": "/PPD|CCD"
+    },
+    {
+      "name": "companyEntryDescription",
+      "size": 10,
+      "format": "Alpha"
+    },
+    {
+      "name": "companyDescriptiveDate",
+      "size": 6,
+      "format": "Alpha",
+      "default": ""
+    },
+    {
+      "name": "effectiveEntryDate",
+      "size": 6,
+      "format": "Numeric"
+    },
+    {
+      "name": "settlementDate",
+      "size": 3,
+      "format": "/[ ]{3}",
+      "default": "   "
+    },
+    {
+      "name": "originatorStatusCode",
+      "size": 1,
+      "format": "Numeric",
+      "default": "1"
+    },
+    {
+      "name": "originatingFinancialInstitution",
+      "size": 8,
+      "format": "Numeric"
+    },
+    {
+      "name": "batchNumber",
+      "size": 7,
+      "format": "Numeric"
+    }
+  ],
+  "EntryDetail": [
+    {
+      "name": "type",
+      "size": 1,
+      "format": "/6/",
+      "default": "6"
+    },
+    {
+      "name": "transactionCode",
+      "size": 2,
+      "format": "Numeric"
+    },
+    {
+      "name": "receivingDFIIdentification",
+      "size": 8,
+      "format": "Numeric"
+    },
+    {
+      "name": "checkDigit",
+      "size": 1,
+      "format": "Numeric"
+    },
+    {
+      "name": "receivingDFIAccountNumber",
+      "size": 17,
+      "format": "Alpha"
+    },
+    {
+      "name": "amount",
+      "size": 10,
+      "format": "Numeric"
+    },
+    {
+      "name": "individualIdentificationNumber",
+      "size": 15,
+      "format": "Alpha"
+    },
+    {
+      "name": "individualName",
+      "size": 22,
+      "format": "Alpha"
+    },
+    {
+      "name": "discretionaryData",
+      "size": 2,
+      "format": "Alpha",
+      "default": "  "
+    },
+    {
+      "name": "addendaRecordIdentifier",
+      "size": 1,
+      "format": "/1|0/",
+      "default": "0"
+    },
+    {
+      "name": "traceNumber",
+      "size": 15,
+      "format": "Numeric"
+    }
+  ],
+  "BatchControl": [
+    {
+      "name": "type",
+      "size": 1,
+      "format": "/8/",
+      "default": "8"
+    },
+    {
+      "name": "serviceClassCode",
+      "size": 3,
+      "format": "Numeric"
+    },
+    {
+      "name": "entryCount",
+      "size": 6,
+      "format": "Numeric"
+    },
+    {
+      "name": "entryHash",
+      "size": 10,
+      "format": "Numeric"
+    },
+    {
+      "name": "debitAmount",
+      "size": 12,
+      "format": "Numeric"
+    },
+    {
+      "name": "creditAmount",
+      "size": 12,
+      "format": "Numeric"
+    },
+    {
+      "name": "companyIdentification",
+      "size": 10,
+      "format": "Numeric"
+    },
+    {
+      "name": "messageAuthenticationCode",
+      "size": 19,
+      "format": "Alpha",
+      "default": ""
+    },
+    {
+      "name": "reserved",
+      "size": 6,
+      "format": "/[ ]{6}",
+      "default": ""
+    },
+    {
+      "name": "originatingDFIIdentification",
+      "size": 8,
+      "format": "Numeric"
+    },
+    {
+      "name": "batchNumber",
+      "size": 7,
+      "format": "Numeric"
+    }
+  ],
+  "FileControl": [
+    {
+      "name": "type",
+      "size": 1,
+      "format": "/9/",
+      "default": "9"
+    },
+    {
+      "name": "batchCount",
+      "size": 6,
+      "format": "Numeric"
+    },
+    {
+      "name": "blockCount",
+      "size": 6,
+      "format": "Numeric"
+    },
+    {
+      "name": "entryCount",
+      "size": 8,
+      "format": "Numeric"
+    },
+    {
+      "name": "entryHash",
+      "size": 10,
+      "format": "Numeric"
+    },
+    {
+      "name": "totalDebitAmount",
+      "size": 12,
+      "format": "Amount"
+    },
+    {
+      "name": "totalCreditAmount",
+      "size": 12,
+      "format": "Amount"
+    },
+    {
+      "name": "reserved",
+      "size": 39,
+      "format": "/[ ]{39}/",
+      "default": ""
+    }
+  ]
+}

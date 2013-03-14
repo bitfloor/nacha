@@ -1,0 +1,25 @@
+{
+  "name": "nacha",
+  "version": "0.0.0",
+  "description": "create NACHA files",
+  "main": "nacha.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --ui tdd test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bitfloor/nacha.git"
+  },
+  "keywords": [
+    "ach",
+    "nacha"
+  ],
+  "author": "Roman Shtylman <shtylman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.8.1"
+  }
+}
